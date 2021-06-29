@@ -1,0 +1,88 @@
+#pageDashboard {
+  background-color: white;
+}
+
+#pageDashboard main{
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(2, 1frs);
+  grid-gap: 7%;
+  grid-column-gap: 1.5%;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#pageDashboard main section{
+  background-color: #C0A5B5;
+  border-radius: 8px;
+}
+
+#pageDashboard main #totalInvested {
+  grid-column: 1/5;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: baseline; */
+}
+
+#pageDashboard main #totalInvested .value{
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 4rem;
+  color:black;
+  font-family: Poppins;
+}
+
+#pageDashboard main #totalInvested .value span{
+  font-size: 46px;
+}
+#pageDashboard main #totalInvested .value p{
+  font-size: 24px;
+}
+
+#pageDashboard main  h3{
+  margin: 1rem 0 0 1rem;
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+
+#pageDashboard main #buttons{
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+#pageDashboard main button{
+  background-color: var(--green);
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: 0;
+  margin-left: 1rem;
+  color: white;
+}
+
+#pageDashboard main #totalInvested h3{
+  margin: 1rem 0 0 1rem;
+}
+
+#pageDashboard  main #totalEarned{
+  grid-column: 5;
+  grid-row: 1;
+}
+
+#pageDashboard main #chart{
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+#pageDashboard main #transactions{
+  grid-column: 4/6;
+  grid-row: 2;
+}
